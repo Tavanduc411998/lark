@@ -1,0 +1,28 @@
+.download-container {
+    .header {
+        background-color: rgba(240,244,255,.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-size: 48px;
+            color: #1F2329;
+        }
+        p {
+            font-size: 24px;
+            color: #51565D;
+        }
+        button {
+            font-size: 20px;
+            padding: 0 40px;
+            background-color: #3370ff;
+            border:1px solid #3370ff;
+            border-radius:30px;
+            color: #FFF;
+            cursor: pointer;
+            height: 52px;
+            font-weight: 500;
+        }
+    }
+}
