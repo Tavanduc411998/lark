@@ -1,5 +1,6 @@
 import React from "react";
-import "./NavBar.scss"
+import "./NavBar.scss";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,7 +11,9 @@ const NavBar = () => {
             <img src="/images/logo.webp" alt="Logo" />
           </li>
           <li className="nav-item nav-text">
-            <p>Download</p>
+            <Link to="/download">
+              <p>Download</p>
+            </Link>
           </li>
           <li className="nav-item nav-text">
             <p>About</p>
@@ -19,12 +22,12 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-user">
-        <button className="sign-in">
-          Sign In
-        </button>
-        <button className="sign-up">
-          Sign Up
-        </button>
+        <Link to="/sign-in">
+          <button className="sign-in">Sign In</button>
+        </Link>
+        <Link to="register">
+          <button className="sign-up">Try for free</button>
+        </Link>
       </div>
     </div>
   );

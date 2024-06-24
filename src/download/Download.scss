@@ -1,28 +1,74 @@
 .download-container {
-    .header {
-        background-color: rgba(240,244,255,.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        h2 {
-            font-size: 48px;
-            color: #1F2329;
-        }
-        p {
-            font-size: 24px;
-            color: #51565D;
-        }
-        button {
-            font-size: 20px;
-            padding: 0 40px;
-            background-color: #3370ff;
-            border:1px solid #3370ff;
-            border-radius:30px;
-            color: #FFF;
-            cursor: pointer;
-            height: 52px;
+  .header {
+    background-color: rgba(240, 244, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    h2 {
+      font-size: 48px;
+      color: #1f2329;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 24px;
+      color: #51565d;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      img {
+        width: 10%;
+        margin-right: 12px;
+      }
+      font-size: 20px;
+      padding: 0px;
+      background-color: #3370ff;
+      border: 1px solid #3370ff;
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer;
+      height: 52px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10% 40px;
+    div + div {
+      margin-left: 20px;
+    }
+    div {
+      h4 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #51565d;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #1f2329;
             font-weight: 500;
         }
+      }
     }
+  }
 }
