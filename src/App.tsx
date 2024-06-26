@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./App.css";
-import NavBar from "./component/NavBar";
 import Download from "./download/Download";
 import { Navigate, Route, Routes } from "react-router-dom";
 import SignIn from "./sign/SignIn";
@@ -18,7 +17,6 @@ function App() {
 
   return (
     <Fragment>
-      <NavBar />
       <Routes>
         <Route path="/download" element={<Download />} />
         <Route

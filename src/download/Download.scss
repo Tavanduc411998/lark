@@ -19,10 +19,6 @@
       margin-bottom: 20px;
     }
     .download-btn {
-      img {
-        width: 10%;
-        margin-right: 12px;
-      }
       font-size: 20px;
       padding: 0px;
       background-color: #3370ff;
@@ -34,8 +30,12 @@
       font-weight: 500;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       margin: auto;
+      padding: 0 24px;
+      span {
+        margin-right: 12px;
+      }
     }
   }
   .body {
@@ -67,6 +67,31 @@
           font-size: 14px;
           color: #1f2329;
           font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .body {
+      img {
+        width: 100%;
+      }
+    }
+    .footer {
+      flex-wrap: wrap;
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      div {
+        width: 40%;
+        // height: 24px;
+        // overflow: hidden;
+        margin-bottom: 20px;
+        h4 {
+          margin: 0;
         }
       }
     }

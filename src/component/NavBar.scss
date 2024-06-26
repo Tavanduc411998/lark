@@ -54,4 +54,18 @@
       cursor: pointer;
     }
   }
+  @media (max-width: 700px) {
+    padding: 2% 12px;
+    .navbar-nav {
+      .nav-list {
+        .nav-text {
+          display: none;
+        }
+      }
+    }
+    .navbar-user {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
