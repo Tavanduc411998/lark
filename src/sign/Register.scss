@@ -107,4 +107,9 @@
       display: none;
     }
   }
+  @media (min-width: 1600px) {
+    .sign-in-box {
+      width: 50%;
+    }
+  }
 }
