@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Download.scss";
+import { auth } from "../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Download = () => {
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState();
+  useEffect(() => {
+    auth.onAuthStateChanged((user: any) => {
+      setUser(user);
+    });
+  });
+
+  const handleDownload = () => {
+    if (user) {
+      window.location.href =
+        "https://drive.usercontent.google.com/u/0/uc?id=1tmopYGQcCNTK0Ew2noOstu0Xsj4IqUH5&export=download";
+    } else {
+      window.alert("You must login to download");
+      navigate("/sign-in");
+    }
+  };
+
   return (
     <div className="download-container">
       <div className="header">
         <div>
           <h2>Lark for Windows</h2>
           <p>Start your journey to productivity today. Try Lark for free.s</p>
-          <button className="download-btn">
+          <button className="download-btn" onClick={() => handleDownload()}>
             <img src="/images/download-icon.image" alt="" />
             Download for PC
           </button>
